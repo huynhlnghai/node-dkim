@@ -40,6 +40,11 @@ export function verify(
   callback: (error: Error, result: VerifyResult) => any
 ): void;
 
+export function parse(
+  message: Buffer,
+  callback: (error: Error, result: VerifyResult) => any
+): void;
+
 export function verifySignature(
   body: Buffer,
   headers: any[],
